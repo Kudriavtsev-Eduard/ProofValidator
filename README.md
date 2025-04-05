@@ -14,16 +14,29 @@ A,A->A|-A".
 
 Пример возможной попытки доказательства:
 A->B,C,D|-E->D
+
 A->B,C,D,D|-D
+
 A->B,C,D,D|-D->E
+
 A->B,C,D|-E
+
 D,A->B,C,D|-E
+
 E,D,C|-(A->B)->D
+
 Полученная аннотация:
+
 [1] A->B,C,D|-E->D [Incorrect]
+
 [2] A->B,C,D,D|-D [Hyp. 3]
+
 [3] A->B,C,D,D|-D->E [Incorrect]
+
 [4] A->B,C,D|-E [Incorrect]
+
 [5] D,A->B,C,D|-E [M.P. 2, 3; from Incorrect]
+
 [6] E,D,C|-(A->B)->D [Ded. 1; from Incorrect]
+
 Verdict: Incorrect proof. First mistake in line number: 1
