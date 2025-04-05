@@ -26,4 +26,4 @@ E,D,C|-(A->B)->D
 [4] A->B,C,D|-E [Incorrect]
 [5] D,A->B,C,D|-E [M.P. 2, 3; from Incorrect]
 [6] E,D,C|-(A->B)->D [Ded. 1; from Incorrect]
-Verdict: Incorrect proof. First mistake in line number: 1  (ред.)
+Verdict: Incorrect proof. First mistake in line number: 1
